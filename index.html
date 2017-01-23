@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<title>使用zepto自定义移动端下拉刷新插件</title>
+ 	<style>
+ 		#container{
+ 			width: 100%;
+ 			max-width: 640px;
+ 			height: 600px;
+ 			background:#ccc;
+ 		}
+ 		#slid-down{
+			width: 100%;
+			height: auto;
+			background: #000;
+			border-radius: 0 0 100% 100%;
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			font-size: 13px;
+			/*transition: height 1s;*/
+ 		}
+ 	</style>
+ </head>
+ <body>
+ 	
+ 	<div id="container" class="box">
+ 		这里是网页内容
+ 	</div>
+ 	<script type="text/javascript" src="js/zepto.min.js"></script>
+ 	<script type="text/javascript" src="js/zepto-my-slide-down-refresh.js"></script>
+ 	<script>
+ 		$('.box').slideDownRefresh();
+ 	</script>
+ </body>
+ </html>
